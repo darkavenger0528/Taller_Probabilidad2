@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taller: Probabilidad y Movilidad Urbana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #0f766e;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .card {
+      background: white;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      background: #0f766e;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+    .btn:hover {
+      background: #115e59;
+      transform: translateY(-1px);
+    }
+    .frame-wrapper {
+      margin-top: 1.5rem;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taller: Probabilidad aplicada a movilidad urbana</h1>
+    <p>Análisis de tiempos de desplazamiento de estudiantes hacia la universidad</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Descripción del proyecto</h2>
+      <p>
+        Este proyecto implementa una aplicación en Streamlit para analizar los tiempos de desplazamiento 
+        de los estudiantes hacia la universidad, calculando frecuencias, probabilidades empíricas y 
+        probabilidades acumuladas, y visualizando los resultados mediante histogramas.
+      </p>
+      <p>
+        Los datos provienen de un formulario donde cada estudiante reporta su localidad, 
+        medio de transporte y tiempos de viaje en horas pico y horas valle.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ver la aplicación</h2>
+      <p>
+        Si la aplicación ya está desplegada en una máquina virtual o en Streamlit Cloud,
+        puedes abrirla directamente en una nueva pestaña:
+      </p>
+      <p>
+        <a class="btn" href="TU_URL_PUBLICA_AQUI" target="_blank" rel="noopener noreferrer">
+          Abrir aplicación de Streamlit
+        </a>
+      </p>
+      <p>
+        También puedes intentar verla incrustada aquí abajo (requiere que la URL sea accesible públicamente
+        y permita ser embebida en un iframe):
+      </p>
+      <div class="frame-wrapper">
+        <iframe
+          src="TU_URL_PUBLICA_AQUI"
+          title="Aplicación Streamlit - Taller Movilidad Urbana"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cómo ejecutar localmente</h2>
+      <p>1. Clonar este repositorio:</p>
+      <pre><code>git clone https://github.com/TU_USUARIO/taller-movilidad-streamlit.git
+cd taller-movilidad-streamlit</code></pre>
+      <p>2. Crear un entorno virtual (opcional pero recomendado) e instalar dependencias:</p>
+      <pre><code>pip install -r requirements.txt</code></pre>
+      <p>3. Ejecutar la aplicación de Streamlit:</p>
+      <pre><code>streamlit run app.py</code></pre>
+      <p>4. Abrir el navegador en la URL que indica Streamlit (normalmente 
+        <code>http://localhost:8501</code>).</p>
+    </section>
+  </main>
+
+  <footer>
+    Taller de Probabilidad y Estadística Inferencial · Movilidad urbana
+  </footer>
+</body>
+</html>
